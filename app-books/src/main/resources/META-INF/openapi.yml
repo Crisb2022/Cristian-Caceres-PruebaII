@@ -1,0 +1,130 @@
+openapi: 3.0.3
+info:
+  title: app-books API
+  version: 1.0-SNAPSHOT
+paths:
+  /books:
+    get:
+      tags:
+        - Book Rest
+      summary: Se obtienen todos los libros almacenados
+      responses:
+        "200":
+          description: Desplegado correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+        "400":
+          description: No se ha encontrado lo requerido
+        "500":
+          description: Fallo del interno del servidor
+
+
+    post:
+      tags:
+        - Book Rest
+      summary: Se crea el libro y se lo almacena
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+      responses:
+        "200":
+          description: Insertado correctamente
+        "400":
+          description: No se ha encontrado lo requerido
+        "500":
+          description: Fallo del interno del servidor
+  /books/{id}:
+    get:
+      tags:
+        - Book Rest
+      summary: Se obtiene un libro por medio del ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            format: int64
+            type: integer
+      responses:
+        "200":
+          description: Encontrado de forma satisfactoria
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+        "400":
+          description: No se ha encontrado lo requerido
+        "500":
+          description: Fallo del interno del servidor
+    put:
+      tags:
+        - Book Rest
+      summary: Se actualiza el libro y se lo almacena
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            format: int64
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+      responses:
+        "200":
+          description: Insertado correctamente
+        "400":
+          description: No se ha encontrado lo requerido
+        "500":
+          description: Fallo del interno del servidor
+    delete:
+      tags:
+        - Book Rest
+      summary: Se elimina el libro por medio del ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            format: int64
+            type: integer
+      responses:
+        "200":
+          description: Eliminado correctamente
+        "400":
+          description: No se ha encontrado lo requerido
+        "500":
+          description: Fallo del interno del servidor
+components:
+  schemas:
+    Author:
+      type: object
+      properties:
+        id:
+          format: int64
+          type: integer
+        firstName:
+          type: string
+        lastName:
+          type: string
+    Book:
+      type: object
+      properties:
+        id:
+          format: int64
+          type: integer
+        author:
+          type: object
+        isbn:
+          type: string
+        title:
+          type: string
+        price:
+          format: double
+          type: number

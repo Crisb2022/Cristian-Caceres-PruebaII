@@ -1,0 +1,91 @@
+Manifest-Version: 1.0
+Main-Class: io.helidon.microprofile.cdi.Main
+Class-Path: libs/helidon-microprofile-tracing-3.1.0.jar libs/helidon-mic
+ roprofile-openapi-3.1.0.jar libs/helidon-microprofile-server-3.1.0.jar 
+ libs/helidon-microprofile-rest-client-3.1.0.jar libs/helidon-integratio
+ ns-openapi-ui-3.1.0.jar libs/helidon-tracing-jaeger-3.1.0.jar libs/heli
+ don-integrations-cdi-jta-weld-3.1.0.jar libs/helidon-integrations-cdi-h
+ ibernate-3.1.0.jar libs/helidon-integrations-cdi-jpa-3.1.0.jar libs/jer
+ sey-media-json-binding-3.0.8.jar libs/postgresql-42.5.1.jar libs/Hikari
+ CP-5.0.1.jar libs/helidon-webserver-static-content-3.1.0.jar libs/helid
+ on-webserver-jersey-3.1.0.jar libs/helidon-openapi-3.1.0.jar libs/helid
+ on-service-common-rest-3.1.0.jar libs/helidon-webserver-cors-3.1.0.jar 
+ libs/helidon-webserver-3.1.0.jar libs/helidon-microprofile-config-3.1.0
+ .jar libs/helidon-config-encryption-3.1.0.jar libs/helidon-common-key-u
+ til-3.1.0.jar libs/helidon-tracing-jersey-3.1.0.jar libs/helidon-tracin
+ g-jersey-client-3.1.0.jar libs/helidon-webclient-jaxrs-3.1.0.jar libs/h
+ elidon-common-configurable-3.1.0.jar libs/helidon-microprofile-cdi-3.1.
+ 0.jar libs/helidon-tracing-opentelemetry-3.1.0.jar libs/helidon-micropr
+ ofile-tests-junit5-3.1.0.jar libs/helidon-jersey-client-3.1.0.jar libs/
+ helidon-media-jsonp-3.1.0.jar libs/helidon-media-common-3.1.0.jar libs/
+ helidon-common-http-3.1.0.jar libs/helidon-tracing-config-3.1.0.jar lib
+ s/helidon-common-context-3.1.0.jar libs/helidon-tracing-tracer-resolver
+ -3.1.0.jar libs/helidon-tracing-opentracing-3.1.0.jar libs/helidon-trac
+ ing-3.1.0.jar libs/helidon-config-yaml-mp-3.1.0.jar libs/helidon-config
+ -mp-3.1.0.jar libs/helidon-logging-common-3.1.0.jar libs/helidon-config
+ -yaml-3.1.0.jar libs/helidon-config-testing-3.1.0.jar libs/helidon-conf
+ ig-object-mapping-3.1.0.jar libs/helidon-config-3.1.0.jar libs/helidon-
+ common-media-type-3.1.0.jar libs/helidon-common-reactive-3.1.0.jar libs
+ /helidon-common-mapper-3.1.0.jar libs/helidon-common-service-loader-3.1
+ .0.jar libs/jersey-mp-rest-client-3.0.8.jar libs/jersey-weld2-se-3.0.8.
+ jar libs/weld-jta-4.0.2.Final.jar libs/weld-se-core-3.1.0.jar libs/weld
+ -spi-4.0.SP1.jar libs/weld-api-4.0.SP1.jar libs/jakarta.enterprise.cdi-
+ api-3.0.0.jar libs/jakarta.interceptor-api-2.0.0.jar libs/helidon-jerse
+ y-server-3.1.0.jar libs/jersey-hk2-3.0.8.jar libs/helidon-jersey-media-
+ jsonp-3.1.0.jar libs/jersey-media-json-processing-3.0.8.jar libs/jersey
+ -server-3.0.8.jar libs/jersey-client-3.0.8.jar libs/jersey-common-3.0.8
+ .jar libs/helidon-integrations-cdi-jta-3.1.0.jar libs/narayana-jta-jaka
+ rta-5.12.0.Final.jar libs/jboss-transaction-spi-jakarta-7.6.1.Final.jar
+  libs/jakarta.resource-api-2.0.0.jar libs/jakarta.annotation-api-2.0.0.
+ jar libs/hibernate-core-6.1.4.Final.jar libs/jersey-media-sse-3.0.8.jar
+  libs/jakarta.inject-api-2.0.1.jar libs/jersey-cdi1x-3.0.8.jar libs/jak
+ arta.ws.rs-api-3.0.0.jar libs/yasson-2.0.4.jar libs/jakarta.json.bind-a
+ pi-2.0.0.jar libs/jakarta.persistence-api-3.0.0.jar libs/jakarta.transa
+ ction-api-2.0.0.jar libs/jakarta.el-4.0.2.jar libs/hibernate-validator-
+ cdi-7.0.2.Final.jar libs/flyway-core-9.11.0.jar libs/helidon-jersey-com
+ mon-3.1.0.jar libs/helidon-common-crypto-3.1.0.jar libs/helidon-common-
+ 3.1.0.jar libs/helidon-integrations-cdi-reference-counted-context-3.1.0
+ .jar libs/helidon-integrations-cdi-delegates-3.1.0.jar libs/helidon-int
+ egrations-jta-jdbc-3.1.0.jar libs/helidon-integrations-jdbc-3.1.0.jar l
+ ibs/opentelemetry-exporter-jaeger-1.15.0.jar libs/jackson-jr-objects-2.
+ 14.0.jar libs/smallrye-open-api-jaxrs-2.1.16.jar libs/smallrye-open-api
+ -core-2.1.16.jar libs/jackson-dataformat-yaml-2.14.0.jar libs/jackson-c
+ ore-2.14.0.jar libs/jackson-dataformat-toml-2.14.0.jar libs/jackson-dat
+ abind-2.14.0.jar libs/jackson-annotations-2.14.0.jar libs/opentelemetry
+ -sdk-1.15.0.jar libs/opentelemetry-opentracing-shim-1.15.0-alpha.jar li
+ bs/opentelemetry-sdk-logs-1.15.0-alpha.jar libs/opentelemetry-sdk-trace
+ -1.15.0.jar libs/opentelemetry-sdk-metrics-1.15.0.jar libs/opentelemetr
+ y-sdk-common-1.15.0.jar libs/opentelemetry-exporter-otlp-common-1.15.0.
+ jar libs/opentelemetry-semconv-1.15.0-alpha.jar libs/opentelemetry-exte
+ nsion-trace-propagators-1.15.0.jar libs/opentelemetry-api-1.15.0.jar li
+ bs/opentelemetry-context-1.15.0.jar libs/opentracing-util-0.33.0.jar li
+ bs/opentracing-tracerresolver-0.1.8.jar libs/opentracing-noop-0.33.0.ja
+ r libs/opentracing-api-0.33.0.jar libs/jaxb-impl-3.0.2.jar libs/jaxb-co
+ re-3.0.2.jar libs/jaxb-runtime-3.0.2.jar libs/jaxb-core-3.0.2.jar libs/
+ jakarta.xml.bind-api-3.0.1.jar libs/jakarta.el-api-4.0.0.jar libs/parss
+ on-1.0.2.jar libs/jakarta.json-api-2.0.2.jar libs/jakarta.activation-ap
+ i-2.0.1.jar libs/parsson-media-1.0.2.jar libs/netty-codec-http-4.1.86.F
+ inal.jar libs/netty-handler-4.1.86.Final.jar libs/netty-codec-4.1.86.Fi
+ nal.jar libs/netty-transport-native-unix-common-4.1.86.Final.jar libs/n
+ etty-transport-4.1.86.Final.jar libs/netty-buffer-4.1.86.Final.jar libs
+ /snakeyaml-1.33.jar libs/microprofile-config-api-3.0.1.jar libs/micropr
+ ofile-opentracing-api-3.0.jar libs/microprofile-rest-client-api-3.0.jar
+  libs/microprofile-openapi-api-3.0.jar libs/jandex-2.4.3.Final.jar libs
+ /slf4j-jdk14-1.7.32.jar libs/slf4j-api-1.7.32.jar libs/hibernate-valida
+ tor-7.0.2.Final.jar libs/jakarta.validation-api-3.0.0.jar libs/weld-env
+ ironment-common-4.0.2.Final.jar libs/jboss-classfilewriter-1.2.5.Final.
+ jar libs/jboss-logging-3.4.3.Final.jar libs/reactive-streams-1.0.4.jar 
+ libs/netty-resolver-4.1.86.Final.jar libs/netty-common-4.1.86.Final.jar
+  libs/okhttp-4.9.3.jar libs/okio-jvm-2.8.0.jar libs/junit-platform-comm
+ ons-1.7.0.jar libs/junit-jupiter-api-5.7.0.jar libs/hamcrest-all-1.3.ja
+ r libs/checker-qual-3.5.0.jar libs/smallrye-open-api-ui-2.1.16.jar libs
+ /hibernate-commons-annotations-6.0.2.Final.jar libs/classmate-1.5.1.jar
+  libs/byte-buddy-1.12.9.jar libs/antlr4-runtime-4.10.1.jar libs/jakarta
+ .activation-2.0.1.jar libs/osgi-resource-locator-1.0.3.jar libs/jakarta
+ .json-2.0.0-module.jar libs/weld-core-impl-3.1.0.jar libs/hk2-locator-3
+ .0.3.jar libs/javassist-3.28.0-GA.jar libs/apiguardian-api-1.1.0.jar li
+ bs/opentest4j-1.2.0.jar libs/hk2-api-3.0.3.jar libs/aopalliance-repacka
+ ged-3.0.3.jar libs/hk2-utils-3.0.3.jar libs/kotlin-stdlib-1.4.10.jar li
+ bs/txw2-3.0.2.jar libs/istack-commons-runtime-4.0.1.jar libs/kotlin-std
+ lib-common-1.4.10.jar libs/annotations-13.0.jar
+
